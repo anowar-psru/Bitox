@@ -7,9 +7,9 @@ import { Autoplay } from 'swiper/modules';
 const Established = () => {
     const sliderData = [
     { id: 1, text: "Since 1998" },
-    { id: 2, text: "Since 2005" },
-    { id: 3, text: "Since 2010" },
-    { id: 4, text: "Since 2015" },
+    { id: 2, text: "Since 1998" },
+    { id: 3, text: "Since 1998" },
+    { id: 4, text: "Since 1998" },
 ];
     return (
         <>
@@ -58,7 +58,7 @@ const Established = () => {
                         sliderData.map((item) => (
                             <SwiperSlide key={item.id}>
                                 <div className="flex items-center gap-7.5 2xl:gap-15 pt-5">
-                                    <div className="text-heading text-[22px] sm:text-[40px] md:text-[56px] lg:text-7xl xl:text-[100px] 3xl:text-9xl 4xl:text-[160px] 2xl:leading-40 font-extrabold">
+                                    <div className="text-heading text-[22px] sm:text-[40px] md:text-[56px] lg:text-7xl xl:text-[100px] 3xl:text-9xl 4xl:text-[170px] 2xl:leading-40 font-extrabold">
                                         {item.text}
                                     </div>
                                     <div className="w-5.5 h-5.5 bg-heading rounded inline-block"></div>

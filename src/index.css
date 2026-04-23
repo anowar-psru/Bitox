@@ -1,1 +1,62 @@
 @import "tailwindcss";
+@theme {
+    --font-heading: "Space Grotesk", sans-serif;
+    --font-paragraph: "DM Sans", sans-serif;
+    --color-primary: #FF5101;
+    --color-heading: #02090F;
+    --color-paragraph: #555555; 
+    --color-background: #FAF7EF;
+}
+/* Custom Breakpoint Here */
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-2xl: 1400px;
+    --breakpoint-3xl: 1600px;
+    --breakpoint-4xl: 1800px;
+}
+body {
+    @apply text-[17px] text-paragraph leading-7 font-paragraph bg-background
+}
+.container {
+    @apply max-w-415 px-7.5 mx-auto
+}
+/* =====================================================================================================
+Reusable Components Style Here
+======================================================================================================*/
+/* Border color Here */
+.border-color-2 {
+    @apply border border-[rgba(256,256,256,0.1)] rounded-md
+}
+/* Primary BTN Here */
+.primary-btn {
+    @apply bg-heading rounded-md text-base text-white leading-5 px-6.25 py-3.75 block w-fit;
+}
+
+.btn-wrapper {
+    @apply relative overflow-hidden
+}
+
+.btn-front-text {
+    @apply absolute top-0 left-0 w-full translate-y-0 group-hover:-translate-y-full transition-all duration-300
+}
+
+.btn-back-text {
+    @apply absolute top-0 left-0 w-full translate-y-full group-hover:translate-y-0 transition-all duration-300
+}
+/* ==========================================================================================================
+Swiper JS Autoplay Slider CSS Here
+========================================================================================================== */
+.established-slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+/* ==========================================================================================================
+Footer CSS Styleh Here
+========================================================================================================== */
+.footer-info {
+    @apply text-white flex items-center justify-center text-xl leading-7.5 font-medium font-heading py-6.25
+}

@@ -1,9 +1,10 @@
-
-
+import Banner from "./HomeComponents/Banner"
+import Established from "./HomeComponents/Established"
 const Home = () => {
     return (
         <>
-Home page here
+            <Banner />
+            <Established />
         </>
     )
 }
